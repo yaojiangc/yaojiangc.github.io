@@ -1,0 +1,136 @@
+
+body {
+    font-size: 12px;
+    font-family: 'Source Sans Pro';
+    background: #232830;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+}
+
+.img-thumbnail img {
+    width: 100%;
+    -webkit-filter: grayscale(40%);
+    filter: grayscale(40%);
+}
+
+.img-thumbnail {
+    overflow: hidden;
+}
+
+.img-thumbnail img:hover {
+    transform: scale(1.2);
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
+.col-md-4 {
+    padding: 5px;
+}
+
+.col-md-8 {
+    padding: 5px;
+}
+
+.col-md-12 {
+    padding: 5px;
+}
+
+#header {
+    margin: 0;
+    padding: 0;
+}
+
+#main-window {
+    background: pink;
+    height: 100vh;
+    color: black;
+}
+
+#main-text{
+    height: 20vh;
+    padding: 10px;
+    margin: 28vh auto auto auto;
+    width: 50%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#main-text p {
+    font-size: 3em;
+    font-weight: bold;
+    font-family: 'Architects Daughter';
+}
+
+
+hr.style-two {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+hr.style-one {
+    color: white;
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+
+#button-row {
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+#button-row button {
+    font-size: 1.0em;
+}
+
+#project-button {
+    padding: 0;
+}
+
+.sub-window {
+    padding-top: 3vh;
+    min-height: 30vh;
+}
+
+#about-content {
+    margin-top: 2vh;
+    padding: 2vh;
+    background: rgba(10,10,10,.2);
+    width: 100%;
+    color: white;
+}
+
+#contact-content {
+    margin-top: 2vh;
+    padding: 2vh;
+    background: rgba(10,10,10,.2);
+    width: 100%;
+    color: white;
+}
+
+#project-content {
+    margin-top: 2vh;
+    padding: 2vh;
+    background: rgba(10,10,10,.2);
+    width: 100%;
+    color: white;
+}
+
+#gallery-content {
+    margin-top: 2vh;
+    padding: 2vh;
+}
+
+#contact-me {
+    font-family: 'Courier New', Courier;
+    font-size: 1.2em;
+    line-height: 20px;
+}
+
+#social-media {
+    padding: 2vh;
+}
