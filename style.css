@@ -1,12 +1,16 @@
 
 body {
-    font-size: 12px;
     font-family: 'Source Sans Pro';
     background: #232830;
-    color: white;
+}
+
+#header {
+    width: 100%;
 }
 
 h2 {
+    text-shadow: 0px 1px 2px rgba(200,200,200,1),
+                 0px 3px 5px rgba(150,150,150,0.5);
     text-align: center;
 }
 
@@ -26,25 +30,8 @@ h2 {
     filter: grayscale(0%);
 }
 
-#gallery-content > .col-md-4 {
-    padding: 5px;
-}
-
-#gallery-content > .col-md-8 {
-    padding: 5px;
-}
-
-#gallery-content > .col-md-12 {
-    padding: 5px;
-}
-
-#header {
-    margin: 0;
-    padding: 0;
-}
-
 #main-window {
-    background: pink;
+    background: rgb(255, 192, 203);
     height: 100vh;
     color: black;
 }
@@ -52,7 +39,7 @@ h2 {
 #main-text{
     height: 20vh;
     padding: 10px;
-    margin: 28vh auto auto auto;
+    margin: 26vh auto auto auto;
     width: 50%;
     text-align: center;
     vertical-align: middle;
@@ -62,6 +49,9 @@ h2 {
     font-size: 3em;
     font-weight: bold;
     font-family: 'Architects Daughter';
+    text-shadow: 0px 1px 2px rgba(0,0,0,1),
+    0px 3px 3px rgba(145,82,93,1),
+    0px 5px 5px rgba(235,172,183,0.5);
 }
 
 
@@ -83,36 +73,12 @@ hr.style-one {
     max-width: 500px;
 }
 
-#button-row button {
-    font-size: 1.0em;
-}
-
-#project-button {
-    padding: 0;
-}
-
 .sub-window {
     padding-top: 3vh;
     min-height: 30vh;
 }
 
-#about-content {
-    margin: 2vh auto;
-    padding: 2vh;
-    background: rgba(10,10,10,.2);
-    width: 100%;
-    color: white;
-}
-
-#contact-content {
-    margin: 2vh auto;  
-    padding: 2vh;
-    background: rgba(10,10,10,.2);
-    width: 100%;
-    color: white;
-}
-
-#project-content {
+#about-content, #contact-content, #project-content {
     margin: 2vh auto;
     padding: 2vh;
     background: rgba(10,10,10,.2);
@@ -127,13 +93,31 @@ hr.style-one {
 
 #contact-me {
     font-family: 'Courier New', Courier;
-    font-size: 1.2em;
+    font-size: 1.1rem;
     line-height: 20px;
 }
 
-#social-media {
-    padding: 2vh;
+.fab, .far {
+    font-size: 3.5em;
 }
+
+.fab:hover, .far:hover {
+    color: orange;
+}
+
+
+.fa-linkedin {
+    color: #0077b5;
+}
+
+.fa-github {
+    color: white;
+}
+
+.fa-envelope {
+    color: rgba(210,0,0,0.7);
+}
+
 
 label {
     font-size: 1.1em;
@@ -145,6 +129,28 @@ input {
     font-weight: 600;
 }
 
-.goToTop:hover {
+
+.goToTop h2:hover {
     cursor: pointer;
+    color: rgba(255,255,255,0.7);
+}
+
+.navbar {
+    display: none;
+}
+
+.navbar.scrolled {
+    background: rgb(255, 192, 203, 1);
+    display: flex;
+    justify-content: center;
+}
+
+#mainNavBar a{
+    font-family: 'Abril Fatface';
+    font-size: 1.5rem;
+}
+
+#mainNavBar .navbar-brand:hover {
+    cursor: pointer;
+    color: rgb(0,0,0,0.7);
 }

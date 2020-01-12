@@ -1,3 +1,12 @@
+$(function(){
+    $(document).scroll(function(){
+        $('#mainNavBar').toggleClass(
+            "scrolled", $(this).scrollTop() > $('#main-window').height()
+            );
+    });
+});
+
+
 $(document).ready(function(){
     $('#goToAbout').click(function() {
         $('html,body').animate({
@@ -16,5 +25,4 @@ $(document).ready(function(){
                 scrollTop: 0},
             'slow');
     });
-
 });
