@@ -14,17 +14,17 @@ h2 {
     text-align: center;
 }
 
-.img-thumbnail img {
+.img-thumbnail:not(#main-image) img {
     width: 100%;
     -webkit-filter: grayscale(40%);
-    filter: grayscale(40%);
+    filter: grayscale(70%);
 }
 
-.img-thumbnail {
+.img-thumbnail:not(#main-image) {
     overflow: hidden;
 }
 
-.img-thumbnail img:hover {
+.img-thumbnail:not(#main-image) img:hover {
     transform: scale(1.2);
     -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
