@@ -1,7 +1,7 @@
 $(function(){
     $(document).scroll(function(){
         $('#mainNavBar').toggleClass(
-            "scrolled", $(this).scrollTop() > $('#main-window').height()
+            "scrolled", $(this).scrollTop() > $('#header').height()
             );
     });
 });
@@ -10,7 +10,7 @@ $(function(){
 $(document).ready(function(){
     $('.goToGallery').click(function() {
         $('html,body').animate({
-                scrollTop: $('#gallery').offset().top + 10},
+                scrollTop: $('#gallery').offset().top},
             'slow');
     });
 
