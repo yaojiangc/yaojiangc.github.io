@@ -17,7 +17,7 @@ h2 {
 .img-thumbnail:not(#main-image) img {
     width: 100%;
     -webkit-filter: grayscale(40%);
-    filter: grayscale(70%);
+    filter: grayscale(80%);
 }
 
 .img-thumbnail:not(#main-image) {
@@ -71,6 +71,20 @@ hr.style-one {
 #button-row {
     margin: 0 auto;
     max-width: 500px;
+}
+
+#down-arrow-div {
+    margin-top: 94vh; 
+    width:100%;
+}
+
+.fa-chevron-down {
+    font-size: 2rem; 
+    color:rgba(0,0,0,0.7);
+}
+
+.fa-chevron-down:hover {
+    color: rgba(0,0,0,1);
 }
 
 .sub-window {
@@ -153,4 +167,10 @@ input {
 #mainNavBar .navbar-brand:hover {
     cursor: pointer;
     color: rgb(0,0,0,0.7);
+}
+
+
+#social-media .card-body {
+    color: red;
+    background: rgba(0,0,0,0.2);
 }

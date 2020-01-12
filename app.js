@@ -8,15 +8,21 @@ $(function(){
 
 
 $(document).ready(function(){
-    $('#goToAbout').click(function() {
+    $('.goToGallery').click(function() {
         $('html,body').animate({
-                scrollTop: $('.about').offset().top},
+                scrollTop: $('#gallery').offset().top + 10},
             'slow');
     });
 
-    $('#goToContact').click(function() {
+    $('.goToAbout').click(function() {
         $('html,body').animate({
-                scrollTop: $('.contact').offset().top},
+                scrollTop: $('#about').offset().top},
+            'slow');
+    });
+
+    $('.goToContact').click(function() {
+        $('html,body').animate({
+                scrollTop: $('#contact').offset().top},
             'slow');
     });
 
