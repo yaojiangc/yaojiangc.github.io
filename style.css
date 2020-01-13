@@ -1,14 +1,15 @@
-
+/********************************************
+* Global Styles
+********************************************/
 body {
     font-family: 'Source Sans Pro';
     background: #232830;
 }
 
-#header {
-    width: 100%;
-    background: rgb(255, 192, 203);
-    height: 100vh;
-    color: black;
+@media screen and (max-width: 370px) {
+    body {
+        font-size: 12px;
+    }
 }
 
 .h2 {
@@ -17,22 +18,39 @@ body {
     text-align: center;
 }
 
-.img-thumbnail:not(#main-image) img {
+.header {
     width: 100%;
-    -webkit-filter: grayscale(40%);
-    filter: grayscale(80%);
+    background: rgb(255, 192, 203);
+    height: 100vh;
+    color: black;
 }
 
-.img-thumbnail:not(#main-image) {
-    overflow: hidden;
+/********************************************
+* Navigation Bar
+********************************************/
+#mainNavBar.navbar {
+    display: none;
 }
 
-.img-thumbnail:not(#main-image) img:hover {
-    transform: scale(1.2);
-    -webkit-filter: grayscale(0%);
-    filter: grayscale(0%);
+#mainNavBar.navbar.scrolled {
+    background: rgba(255, 192, 203, 1);
+    display: flex;
+    justify-content: center;
 }
 
+#mainNavBar a{
+    font-family: 'Abril Fatface';
+    font-size: 1.5rem;
+}
+
+#mainNavBar .navbar-brand:hover {
+    cursor: pointer;
+    color: rgb(0,0,0,0.7);
+}
+
+/********************************************
+* Header (Top)
+********************************************/
 #main-text{
     height: 20vh;
     padding: 10px;
@@ -56,14 +74,20 @@ body {
 hr.style-two {
     border: 0;
     height: 2px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to right,
+                         rgba(0, 0, 0, 0),
+                         rgba(0, 0, 0, 0.75),
+                         rgba(0, 0, 0, 0));
 }
 
 hr.style-one {
     color: white;
     border: 0;
     height: 2px;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+    background-image: linear-gradient(to right,
+                        rgba(255, 255, 255, 0),
+                        rgba(255, 255, 255, 0.75),
+                        rgba(255, 255, 255, 0));
 }
 
 #button-row {
@@ -86,6 +110,9 @@ hr.style-one {
     color: rgba(0,0,0,1);
 }
 
+/********************************************
+* Sub Window Global (Contents)
+********************************************/
 .sub-window {
     padding-top: 3vh;
     min-height: 30vh;
@@ -99,18 +126,9 @@ hr.style-one {
     color: white;
 }
 
-#bio-text {
-    color: rgba(255,255,255,0.7)
-}
-
-#gallery-content {
-    margin: 2vh auto;
-    padding: 2vh;
-}
-
-#contact-me {
-    font-family: 'Courier New', Courier;
-    line-height: 20px;
+.goToTop .h2:hover {
+    cursor: pointer;
+    color: rgba(255,255,255,0.7);
 }
 
 .fab, .far {
@@ -121,6 +139,57 @@ hr.style-one {
     color: orange;
 }
 
+/********************************************
+* Sub Window - Gallery Content
+********************************************/
+#gallery-content {
+    margin: 2vh auto;
+    padding: 2vh;
+}
+
+#gallery-content .img-thumbnail:not(#main-image) {
+    overflow: hidden;
+}
+
+#gallery-content .img-thumbnail:not(#main-image) img {
+    width: 100%;
+    -webkit-filter: grayscale(40%);
+    filter: grayscale(80%);
+}
+
+#gallery-content .img-thumbnail:not(#main-image) img:hover {
+    transform: scale(1.2);
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
+/********************************************
+* Sub Window - About Content
+********************************************/
+#bio-text {
+    color: rgba(255,255,255,0.7)
+}
+
+/********************************************
+* Sub Window - Contact Content
+********************************************/
+#contact-me {
+    font-family: 'Courier New', Courier;
+    line-height: 20px;
+}
+
+#contact-me label {
+    font-size: 1.1em;
+}
+
+#contact-me input {
+    margin-bottom: 0.5vh;
+}
+
+#social-media .card-body {
+    color: red;
+    background: rgba(0,0,0,0.2);
+}
 
 .fa-linkedin {
     color: #0077b5;
@@ -132,49 +201,4 @@ hr.style-one {
 
 .fa-envelope {
     color: rgba(210,0,0,0.7);
-}
-
-label {
-    font-size: 1.1em;
-}
-
-input {
-    margin-bottom: 0.5vh;
-}
-
-.goToTop .h2:hover {
-    cursor: pointer;
-    color: rgba(255,255,255,0.7);
-}
-
-.navbar {
-    display: none;
-}
-
-.navbar.scrolled {
-    background: rgb(255, 192, 203, 1);
-    display: flex;
-    justify-content: center;
-}
-
-#mainNavBar a{
-    font-family: 'Abril Fatface';
-    font-size: 1.5rem;
-}
-
-#mainNavBar .navbar-brand:hover {
-    cursor: pointer;
-    color: rgb(0,0,0,0.7);
-}
-
-
-#social-media .card-body {
-    color: red;
-    background: rgba(0,0,0,0.2);
-}
-
-@media screen and (max-width: 370px) {
-    body {
-        font-size: 12px;
-    }
 }

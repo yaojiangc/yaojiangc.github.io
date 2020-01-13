@@ -1,11 +1,13 @@
+/********************************************
+* Index Content Actions
+********************************************/
 $(function(){
     $(document).scroll(function(){
         $('#mainNavBar').toggleClass(
-            "scrolled", $(this).scrollTop() > $('#header').height()
+            "scrolled", $(this).scrollTop() > $('.header').height()
             );
     });
 });
-
 
 $(document).ready(function(){
     $('.goToGallery').click(function() {
@@ -30,5 +32,16 @@ $(document).ready(function(){
         $('html,body').animate({
                 scrollTop: 0},
             'slow');
+    });
+});
+
+/********************************************
+* Projects Content Actions
+********************************************/
+$(function(){
+    $(document).scroll(function(){
+        $('#projectsNavBar').toggleClass(
+            "scrolled", $(this).scrollTop() > $('.header').height()
+            );
     });
 });

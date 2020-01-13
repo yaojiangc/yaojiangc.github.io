@@ -1,0 +1,22 @@
+/********************************************
+* Navigation Bar
+********************************************/
+#projectsNavBar.navbar {
+    display: none;
+}
+
+#projectsNavBar.navbar.scrolled {
+    background: rgba(255, 192, 203, 1);
+    display: flex;
+    justify-content: center;
+}
+
+#projectsNavBar a{
+    font-family: 'Abril Fatface';
+    font-size: 1.5rem;
+}
+
+#projectsNavBar .navbar-brand:hover {
+    cursor: pointer;
+    color: rgb(0,0,0,0.7);
+}
