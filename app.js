@@ -10,7 +10,7 @@ $(function(){
 $(document).ready(function(){
     $('.goToGallery').click(function() {
         $('html,body').animate({
-                scrollTop: $('#gallery').offset().top},
+                scrollTop: $('#gallery').offset().top+1},
             'slow');
     });
 
