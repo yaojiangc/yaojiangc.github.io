@@ -47,9 +47,9 @@ $(function(){
 });
 
 
-$('img').ready(function(){
+window.onload = (event) => {
     $('.gallery-spinner').removeClass("d-flex");
     $('.gallery-spinner').addClass("d-none");
     $('#gallery-content').removeClass('d-none');
     $('#mypic').removeClass('d-none');
-});
+};
