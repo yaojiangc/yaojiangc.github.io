@@ -57,7 +57,18 @@
         <div class="sub-window" id="gallery">
             <hr class="style-one">
             <a class="goToTop"><p class="h2"><i class="fas fa-camera-retro"></i>&ensp;MY GALLERY</p></a>
-            <div class="row" id="gallery-content">
+            <div class="gallery-spinner d-flex justify-content-center align-items-center">
+                <div class="spinner-grow text-danger" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                    <div class="spinner-grow text-warning" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                    <div class="spinner-grow text-info" role="status">
+                        <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+            <div class="row d-none" id="gallery-content">
                 <div class="col-md-4 p-1 d-none d-md-flex">
                     <div class="img-thumbnail">
                         <a href="#galleryCarousel" role="button" data-slide-to="0">
