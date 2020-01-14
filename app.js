@@ -47,7 +47,7 @@ $(function(){
 });
 
 
-$('#gallery-content').ready(function(){
+$('img').ready(function(){
     $('.gallery-spinner').removeClass("d-flex");
     $('.gallery-spinner').addClass("d-none");
     $('#gallery-content').removeClass('d-none');
