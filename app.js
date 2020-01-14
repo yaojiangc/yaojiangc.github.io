@@ -51,4 +51,5 @@ $('img').ready(function(){
     $('.gallery-spinner').removeClass("d-flex");
     $('.gallery-spinner').addClass("d-none");
     $('#gallery-content').removeClass('d-none');
+    $('#mypic').removeClass('d-none');
 });
