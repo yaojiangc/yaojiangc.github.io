@@ -53,3 +53,8 @@ window.onload = (event) => {
     $('#gallery-content').removeClass('d-none');
     $('#mypic').removeClass('d-none');
 };
+
+
+img.onload = (event) => {
+    alert('Loaded image')
+}
