@@ -58,7 +58,7 @@ document.getElementById('mypic').addEventListener('load',function(){
     $('#about .gallery-spinner').removeClass('d-flex');
     $('#about .gallery-spinner').addClass('d-none');
     $('#mypic').removeClass('d-none');
-})
+});
 
 document.getElementById('down-arrow').animate([
     { transform: 'translateY(0rem)'},
