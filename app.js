@@ -57,7 +57,7 @@ window.onload = (event) => {
 
 document.getElementById('down-arrow').animate([
     { transform: 'translateY(0rem)'},
-    { transform: 'translateY(-1rem)'},
+    { transform: 'translateY(-0.5rem)'},
     { transform: 'translateY(0rem)'}
 ], {
     duration: 1000,
