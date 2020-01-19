@@ -48,8 +48,28 @@ $(function(){
 
 
 window.onload = (event) => {
-    $('.gallery-spinner').removeClass("d-flex");
-    $('.gallery-spinner').addClass("d-none");
+    $('.gallery-spinner').removeClass('d-flex');
+    $('.gallery-spinner').addClass('d-none');
     $('#gallery-content').removeClass('d-none');
     $('#mypic').removeClass('d-none');
 };
+
+
+document.getElementById('down-arrow').animate([
+    { transform: 'translateY(0rem)'},
+    { transform: 'translateY(0.5rem)'},
+    { transform: 'translateY(0rem)'}
+], {
+    duration: 1000,
+    iterations: Infinity
+});
+
+document.getElementById('greeting').animate([
+    { transform: 'scale(1)'},
+    { transform: 'scale(1.1)'},
+    { transform: 'scale(1)'}
+
+], {
+    duration: 4000,
+    iterations: Infinity
+});
