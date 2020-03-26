@@ -126,7 +126,7 @@ hr.style-one {
 /********************************************
 * Sub Window Global (Contents)
 ********************************************/
-#main-body {
+.main-body {
     background: #232830;
     padding-bottom: 1rem;
 }
