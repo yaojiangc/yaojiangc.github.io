@@ -20,16 +20,12 @@ body {
 
 .header {
     width: 100%;
-    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2)), url("./Images/header_pic3.jpg") no-repeat fixed;
-    -webkit-background-attachment: fixed;
-    -moz-background-attachment: fixed;
-    -o-background-attachment: fixed;
-    background-attachment: fixed;
-    display: block;
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2)), url("./Images/header_pic.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    overflow: hidden;
     height: 100vh;
     color: black;
 }
