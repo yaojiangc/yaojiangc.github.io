@@ -46,7 +46,7 @@ body:after{
 }
 
 #mainNavBar.navbar.scrolled {
-    background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.6));
+    background-image: linear-gradient(rgba(200, 255, 255, 1), rgba(100, 255, 255, 0.8));
     display: flex;
     justify-content: center;
 }
