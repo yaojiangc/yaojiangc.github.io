@@ -20,8 +20,7 @@ body {
 
 .header {
     width: 100%;
-    /* background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2)), url("./Images/header_pic.jpg") no-repeat center center fixed; */
-    background: url("./Images/header_pic.jpg") no-repeat center center fixed;
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2)), url("./Images/header_pic3.jpg") no-repeat fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -32,7 +31,13 @@ body {
     color: black;
 }
 
-
+.header:after{
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2)), url("./Images/header_pic3.jpg") no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 /********************************************
 * Navigation Bar
 ********************************************/
