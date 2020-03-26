@@ -20,16 +20,12 @@ body {
 
 .header {
     width: 100%;
-    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0)), url("./Images/header_pic.jpg") no-repeat center center;
-    -webkit-background-attachment: fixed;
-    -moz-background-attachment: fixed;
-    -o-background-attachment: fixed;
-    background-attachment: fixed;
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0)), url("./Images/header_pic.jpg") no-repeat fixed;
     display: block;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
     height: 100vh;
     color: black;
 }
@@ -43,7 +39,7 @@ body {
 }
 
 #mainNavBar.navbar.scrolled {
-    background-image: linear-gradient(rgba(0, 200, 255, 0.9), rgba(255, 190, 255, 0.8));
+    background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.6));
     display: flex;
     justify-content: center;
 }
