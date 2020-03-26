@@ -20,7 +20,11 @@ body {
 
 .header {
     width: 100%;
-    background: rgb(255, 192, 203);
+    background-image: linear-gradient(rgba(0, 200, 255, 0.5), rgba(255, 200, 255, 0.8)),
+                      url("./Images/header_pic3.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     height: 100vh;
     color: black;
 }
@@ -33,7 +37,7 @@ body {
 }
 
 #mainNavBar.navbar.scrolled {
-    background: rgba(255, 192, 203, 1);
+    background-image: linear-gradient(rgba(0, 200, 255, 0.9), rgba(255, 190, 255, 0.8));
     display: flex;
     justify-content: center;
 }
