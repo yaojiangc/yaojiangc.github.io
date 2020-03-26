@@ -25,9 +25,13 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    -webkit-background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -webkit-background-attachment: fixed;
     height: 100vh;
     color: black;
 }
+
 
 /********************************************
 * Navigation Bar
