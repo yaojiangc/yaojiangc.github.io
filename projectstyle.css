@@ -20,3 +20,8 @@
     cursor: pointer;
     color: rgb(0,0,0,0.7);
 }
+
+.editor {
+    /** Setting height is also important, otherwise editor wont showup**/
+    height: 45vh;
+}

@@ -38,15 +38,6 @@ $(document).ready(function(){
 /********************************************
 * Projects Content Actions
 ********************************************/
-$(function(){
-    $(document).scroll(function(){
-        $('#projectsNavBar').toggleClass(
-            "scrolled", $(this).scrollTop() > $('.header').height()
-            );
-    });
-});
-
-
 window.onload = (event) => {
     $('.gallery-spinner').removeClass('d-flex');
     $('.gallery-spinner').addClass('d-none');
