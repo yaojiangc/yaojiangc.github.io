@@ -236,3 +236,7 @@ hr.style-one {
 .fa-envelope {
     color: rgba(210,0,0,0.7);
 }
+
+.hpot {
+    display: none;
+}
