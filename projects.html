@@ -93,6 +93,9 @@
                 <hr class="style-one">
                 <a class="goToTop"><p class="h3"><i style="color:#4f4e4b" class="fas fa-microchip"></i>&ensp;MIPS Microprocessor</p></a>
                 <div class="content-template">
+                    <div class="m-3">
+                        In this project, I built a MIPS microprocessor using VHDL code. There are two different versions of MIPS microprocessor implemented: (1)Single Clock Single Instruction (2)Multiple Clock Single Instruction (Pipelined) MIPS Microprocessor. I will be focusing on showing the pipeline MIPS Microprocessor here as it is more related to real life implementation.
+                    </div>
                     <div class="card border-dark">
                         <div class="card-header bg-dark">
                             <strong>
@@ -102,6 +105,71 @@
                         <div class="card-body p-0">
                             <div id="mips_editor" class="editor"></div>
                         </div>
+                    </div>
+                    <div class="m-3">
+                        <div class="row">
+                            <div class="col-12 col-lg-4">
+                                <div>
+                                    <div style="margin: 10px 0 0 -10px">
+                                        <a title="Open file: mp-1.pdf" target="_blank"  href="/docs/mp-1.pdf">
+                                            <img src="Images/pdficon.png" width="36" height="36" style="float: left; position: relative; left: 0px; top: 0px; margin: 0 15px 15px 0; border: 0;" />
+                                        </a>
+                                        <div style="float: left; text-align: left; position: relative;">
+                                            <table style="font-size: 12px; font-family: tahoma; line-height: .9;">
+                                                <tr>
+                                                    <td colspan="2"><b>Project Description File</b></td>
+                                                </tr>
+                                            </table>
+                                            <a title="Open file: mp-1.pdf" href="/docs/mp-1.pdf" target="_blank"  style="font-weight: bold;">
+                                                Open File
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                <div>
+                                    <div style="margin: 10px 0 0 -10px">
+                                        <a title="Open file: mp-1_write-up.pdf" target="_blank" href="/docs/mp-1_write-up.pdf">
+                                            <img src="Images/pdficon.png" width="36" height="36" style="float: left; position: relative; left: 0px; top: 0px; margin: 0 15px 15px 0; border: 0;" />
+                                        </a>
+                                        <div style="float: left; text-align: left; position: relative;">
+                                            <table style="font-size: 12px; font-family: tahoma; line-height: .9;">
+                                                <tr>
+                                                    <td colspan="2"><b>Project Write-up</b></td>
+                                                </tr>
+                                            </table>
+                                            <a title="Open file: mp-1_write-up.pdf" target="_blank" href="/docs/mp-1_write-up.pdf" style="font-weight: bold;">
+                                                Open File
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <strong><font color="99ffff" size="4">Introduction:</font></strong>
+                        <br/>
+                        In this project, we are implementing a 5-stage pipelined MIPS processor. The architecture shall support at least 6 MIPS standard instructions: ADD, ADDI, LW, SW, BEQ, J. Many of the components of processor are provided but primarily focuses would be understanding and connecting the whole pipeline processor using components given as well as building our own hazard detection, forwarding unit, branch comparator and setting up the main control.
+                        <br />
+                        <strong>For detailed software simulation results, please refer project write-up document above.</strong>
+                        <br /><br />
+                        <font color="99ffff" size="4"><strong>My Role:</strong></font>
+                        <br />
+                        In this project, I'm in-charge of modeling the software color conversion using Matlab as well as implementing the hardware color conversion pipeline.
+                        <br /><br />
+                        <font color="99ffff" size="4"><strong>Skills &amp; Knowledge Gained:</strong></font>
+                        <ul>
+                            <li>Building a MIPS Pipelined and non-pipelined Microprocessor using ALU, Register, and Memory VHDL Files provided.</li>
+                        </ul>
+                        <br />
+                        <font color="99ffff" size="4"><strong>Resources:</strong></font>
+                        <ul>
+                            <li>ModelSim</li>
+                            <li>Computer Organization And Design 5th Edition Textbook</li>
+                            <li>Quartus Prime (Optional)</li>
+                            <li>Pipeline Registers (if_id.vhd, id_ex.vhd, ex_mem.vhd, mem_wb.vhd)</li>
+                            <li>VHDL Sources (adder_32.vhd, ALU.vhd, and_2.vhd, branch_comparator.vhd, dmem.vhd, forwarding_unit.vhd, hazard_detection_unit.vhd, imem.vhd, main_control.vhd, mipsprocessor_pipe.vhd, mux4to1_32bit.vhd, mux21_1bit.vhd, mux21_5bit.vhd, mux21_32bit.vhd, pc_reg.vhd, register_file.vhd, sign_externder_16_32.vhd, sll_2.vhd)</li>
+                        </ul>
                     </div>
                 </div>
             </div>  
