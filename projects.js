@@ -86,6 +86,11 @@ $(document).ready(function(){
             id: "mars_rover_editor",
             type: "c_cpp",
             filename: "/src_examples/main.c" 
+        },
+        {
+            id: "sentry_editor",
+            type: "c_cpp",
+            filename: "/src_examples/launcher_driver.c" 
         }
     ];
     for(var i=0; i<editorList.length; i++)
