@@ -34,9 +34,9 @@ $(document).ready(function(){
             'slow');
     });
 
-    $('#gallery-content .img-thumbnail:not(#main-image) a').hover(function() {
-        event.currentTarget.click();
-    });
+    // $('#gallery-content .img-thumbnail:not(#main-image) a').hover(function() {
+    //     event.currentTarget.click();
+    // });
 
     $('#gallery-content').mouseenter(function() {
         $('.carousel').carousel('pause')
