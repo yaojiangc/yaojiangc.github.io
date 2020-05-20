@@ -33,6 +33,10 @@ $(document).ready(function(){
                 scrollTop: 0},
             'slow');
     });
+
+    $('#gallery-content .img-thumbnail:not(#main-image) a').hover(function() {
+        event.currentTarget.click();
+    });
 });
 
 /********************************************
