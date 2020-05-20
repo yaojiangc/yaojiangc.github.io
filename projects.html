@@ -59,388 +59,416 @@
 
 
     <section class="main-body">
-        <div class="container-md">
-            <div class="sub-window" id="project1">
-                <hr class="style-one">
-                <a class="goToTop"><p class="h3"><i style="color:#4f4e4b" class="fas fa-microchip"></i>&ensp;PWM Signal Capture & Generate</p></a>
-                <div class="content-template">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/LZtd3FeD0wU" allowfullscreen></iframe>
-                    </div>
-                    <div class="m-3">
-                        <div class="row">
-                            <div class="col-12 col-lg-4">
-                                <div>
-                                    <div style="margin: 10px 0 0 -10px">
-                                        <a title="Open file: mp-1.pdf" target="_blank"  href="/docs/mp-1.pdf">
-                                            <img src="Images/pdficon.png" width="36" height="36" style="float: left; position: relative; left: 0px; top: 0px; margin: 0 15px 15px 0; border: 0;" />
-                                        </a>
-                                        <div style="float: left; text-align: left; position: relative;">
-                                            <table style="font-size: 12px; font-family: tahoma; line-height: .9;">
-                                                <tr>
-                                                    <td colspan="2"><b>Project Description File</b></td>
-                                                </tr>
-                                            </table>
-                                            <a title="Open file: mp-1.pdf" href="/docs/mp-1.pdf" target="_blank"  style="font-weight: bold;">
-                                                Open File
-                                            </a>
+        <div class="container-fluid p-xl-5">
+            <div class="row mx-0">
+                <div class="col-12">
+                    <div class="sub-window" id="project1">
+                        <hr class="style-one">
+                        <a class="goToTop"><p class="h3"><i style="color:#4f4e4b" class="fas fa-microchip"></i>&ensp;PWM Signal Capture & Generate</p></a>
+                        <div class="content-template">
+                            <div class="row mx-0">
+                                <div class="col-xl-6">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/LZtd3FeD0wU" allowfullscreen></iframe>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 col-lg-4">
+                                            <div>
+                                                <div style="margin: 10px 0 0 -10px">
+                                                    <a title="Open file: mp-1.pdf" target="_blank"  href="/docs/mp-1.pdf">
+                                                        <img src="Images/pdficon.png" width="36" height="36" style="float: left; position: relative; left: 0px; top: 0px; margin: 0 15px 15px 0; border: 0;" />
+                                                    </a>
+                                                    <div style="float: left; text-align: left; position: relative;">
+                                                        <table style="font-size: 12px; font-family: tahoma; line-height: .9;">
+                                                            <tr>
+                                                                <td colspan="2"><b>Project Description File</b></td>
+                                                            </tr>
+                                                        </table>
+                                                        <a title="Open file: mp-1.pdf" href="/docs/mp-1.pdf" target="_blank"  style="font-weight: bold;">
+                                                            Open File
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-4">
+                                            <div>
+                                                <div style="margin: 10px 0 0 -10px">
+                                                    <a title="Open file: mp-1_write-up.pdf" target="_blank" href="/docs/mp-1_write-up.pdf">
+                                                        <img src="Images/pdficon.png" width="36" height="36" style="float: left; position: relative; left: 0px; top: 0px; margin: 0 15px 15px 0; border: 0;" />
+                                                    </a>
+                                                    <div style="float: left; text-align: left; position: relative;">
+                                                        <table style="font-size: 12px; font-family: tahoma; line-height: .9;">
+                                                            <tr>
+                                                                <td colspan="2"><b>Project Write-up</b></td>
+                                                            </tr>
+                                                        </table>
+                                                        <a title="Open file: mp-1_write-up.pdf" target="_blank" href="/docs/mp-1_write-up.pdf" style="font-weight: bold;">
+                                                            Open File
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <strong><font color="99ffff" size="4">Introduction:</font></strong>
+                                    <br/>
+                                    This is the project from Embedded System II class that we are designing both hardware and software platform. For the purpose of this particular project, we are required to create two IP modules using VHDL code to create a hardware function of capture and generate PPM signals taken from RC controller that has 6 channels. 
+                                    <br /><br />
+                                    <font color="99ffff" size="4"><strong>Skills &amp; Knowledge Gained:</strong></font>
+                                    <ul>
+                                        <li>Creating new IP module in Vivado.</li>
+                                        <li>Writing VHDL code for IP module.</li>
+                                        <li>Software and hardware simulation/testing.</li>
+                                    </ul>
+                                    <font color="99ffff" size="4"><strong>Resources:</strong></font>
+                                    <ul>
+                                        <li>Vivado 2018.3</li>
+                                        <li>Eclipse SDK (Software Development Kit)</li>
+                                        <li>​Zedboard: Zynq-7000</li>
+                                        <li>ModelSim</li>
+                                        <li>HobbyKing RC-Controller</li>
+                                    </ul>
+                                </div>
+                                <div class="col-xl-6">
+                                    <strong><font color="99ffff" size="4">Capture PPM:</font></strong>
+                                    <br/>
+                                    <div class="card border-dark">
+                                        <div class="card-header bg-dark">
+                                            <strong>
+                                                capture_ppm.vhd
+                                            </strong>
+                                        </div>
+                                        <div class="card-body p-0">
+                                            <div id="ppm_cap_editor" class="editor"></div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <strong><font color="99ffff" size="4">Generate PPM:</font></strong>
+                                    <br/>
+                                    <div class="card border-dark">
+                                        <div class="card-header bg-dark">
+                                            <strong>
+                                                generate_ppm.vhd
+                                            </strong>
+                                        </div>
+                                        <div class="card-body p-0">
+                                            <div id="ppm_gen_editor" class="editor"></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-lg-4">
-                                <div>
-                                    <div style="margin: 10px 0 0 -10px">
-                                        <a title="Open file: mp-1_write-up.pdf" target="_blank" href="/docs/mp-1_write-up.pdf">
-                                            <img src="Images/pdficon.png" width="36" height="36" style="float: left; position: relative; left: 0px; top: 0px; margin: 0 15px 15px 0; border: 0;" />
-                                        </a>
-                                        <div style="float: left; text-align: left; position: relative;">
-                                            <table style="font-size: 12px; font-family: tahoma; line-height: .9;">
-                                                <tr>
-                                                    <td colspan="2"><b>Project Write-up</b></td>
-                                                </tr>
-                                            </table>
-                                            <a title="Open file: mp-1_write-up.pdf" target="_blank" href="/docs/mp-1_write-up.pdf" style="font-weight: bold;">
-                                                Open File
-                                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="sub-window" id="project2">
+                        <hr class="style-one">
+                        <a class="goToTop"><p class="h3"><i style="color:#4f4e4b" class="fas fa-microchip"></i>&ensp;Sentry Launcher w/ Embedded Linux</p></a>
+                        <div class="content-template">
+                            <div class="row mx-0">
+                                <div class="col-xl-6">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/2LnLFvQzERo" allowfullscreen></iframe>
+                                    </div>
+                                    <strong><font color="99ffff" size="4">Introduction:</font></strong>
+                                    <br/>
+                                    In this project, we integrated Embedded Linux on a Xilinx Zedboard FPGA with on board ARM processor core. With that,
+                                    we uses the hardware pipeline from the Digital Camera project and by also using DMA, we access the video from the Linux Kernel
+                                    and wrote another application for target finding as well as drivers and application to drive the USB missile launcher to shoot at the target.
+                                    <br /><br />
+                                    <font color="99ffff" size="4"><strong>Skills &amp; Knowledge Gained:</strong></font>
+                                    <ul>
+                                        <li>Writing USB Driver for Missile Launcher from USB Skeleton Code</li>
+                                        <li>Setting up and building Embedded Linux to run on an FPGA board</li>
+                                        <li>Writing sentry launcher application utilizing USB missile launcher and camera data through DMA</li>
+                                    </ul>
+                                    <font color="99ffff" size="4"><strong>Resources:</strong></font>
+                                    <ul>
+                                        <li>Vivado 2018.3</li>
+                                        <li>Eclipse SDK (Software Development Kit)</li>
+                                        <li>​Zedboard: Zynq-7000</li>
+                                        <li>USB Missile Launcher</li>
+                                        <li>Vita-2000 Camera</li>
+                                    </ul>
+                                    
+                                </div>
+                                <div class="col-xl-6">
+                                    <strong><font color="99ffff" size="4">USB Missile Launcher Driver for Linux:</font></strong>
+                                    <br/>
+                                    <div class="card border-dark">
+                                        <div class="card-header bg-dark">
+                                            <strong>
+                                                launcher_driver.c
+                                            </strong>
+                                        </div>
+                                        <div class="card-body p-0">
+                                            <div id="sentry_editor" class="editor"></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <strong><font color="99ffff" size="4">Introduction:</font></strong>
-                        <br/>
-                        This is the project from Embedded System II class that we are designing both hardware and software platform. For the purpose of this particular project, we are required to create two IP modules using VHDL code to create a hardware function of capture and generate PPM signals taken from RC controller that has 6 channels. 
-                        <br /><br />
-                        <font color="99ffff" size="4"><strong>Skills &amp; Knowledge Gained:</strong></font>
-                        <ul>
-                            <li>Creating new IP module in Vivado.</li>
-                            <li>Writing VHDL code for IP module.</li>
-                            <li>Software and hardware simulation/testing.</li>
-                        </ul>
-                        <font color="99ffff" size="4"><strong>Resources:</strong></font>
-                        <ul>
-                            <li>Vivado 2018.3</li>
-                            <li>Eclipse SDK (Software Development Kit)</li>
-                            <li>​Zedboard: Zynq-7000</li>
-                            <li>ModelSim</li>
-                            <li>HobbyKing RC-Controller</li>
-                        </ul>
-                        
-                        <strong><font color="99ffff" size="4">Capture PPM:</font></strong>
-                        <br/>
-                        <div class="card border-dark">
-                            <div class="card-header bg-dark">
-                                <strong>
-                                    capture_ppm.vhd
-                                </strong>
-                            </div>
-                            <div class="card-body p-0">
-                                <div id="ppm_cap_editor" class="editor"></div>
-                            </div>
-                        </div>
-                        <br>
-                        <strong><font color="99ffff" size="4">Generate PPM:</font></strong>
-                        <br/>
-                        <div class="card border-dark">
-                            <div class="card-header bg-dark">
-                                <strong>
-                                    generate_ppm.vhd
-                                </strong>
-                            </div>
-                            <div class="card-body p-0">
-                                <div id="ppm_gen_editor" class="editor"></div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="sub-window" id="project3">
+                        <hr class="style-one">
+                        <a class="goToTop"><p class="h3"><i style="color:#4f4e4b" class="fas fa-microchip"></i>&ensp;Digital Camera</p></a>
+                        <div class="content-template">
+                            <div class="row mx-0">
+                                <div class="col-xl-6">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/HFHIIv6eh1g" allowfullscreen></iframe>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 col-lg-4">
+                                            <div>
+                                                <div style="margin: 10px 0 0 -10px">
+                                                    <a title="Open file: mp-2.pdf" target="_blank"  href="/docs/mp-2.pdf">
+                                                        <img src="Images/pdficon.png" width="36" height="36" style="float: left; position: relative; left: 0px; top: 0px; margin: 0 15px 15px 0; border: 0;" />
+                                                    </a>
+                                                    <div style="float: left; text-align: left; position: relative;">
+                                                        <table style="font-size: 12px; font-family: tahoma; line-height: .9;">
+                                                            <tr>
+                                                                <td colspan="2"><b>Project Description File</b></td>
+                                                            </tr>
+                                                        </table>
+                                                        <a title="Open file: mp-2.pdf" href="/docs/mp-2.pdf" target="_blank"  style="font-weight: bold;">
+                                                            Open File
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-4">
+                                            <div>
+                                                <div style="margin: 10px 0 0 -10px">
+                                                    <a title="Open file: mp-2_write-up.pdf" target="_blank" href="/docs/mp-2_write-up.pdf">
+                                                        <img src="Images/pdficon.png" width="36" height="36" style="float: left; position: relative; left: 0px; top: 0px; margin: 0 15px 15px 0; border: 0;" />
+                                                    </a>
+                                                    <div style="float: left; text-align: left; position: relative;">
+                                                        <table style="font-size: 12px; font-family: tahoma; line-height: .9;">
+                                                            <tr>
+                                                                <td colspan="2"><b>Project Write-up</b></td>
+                                                            </tr>
+                                                        </table>
+                                                        <a title="Open file: mp-2_write-up.pdf" target="_blank" href="/docs/mp-2_write-up.pdf" style="font-weight: bold;">
+                                                            Open File
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <strong><font color="99ffff" size="4">Introduction:</font></strong>
+                                    <br/>
+                                    This is the project from Embedded System II class that we are designing both hardware and software platform. For the purpose of this particular project, we are required to convert a Bayer image input from VITA-2000 camera into a full 24-bit RGB full color and then to 16-bit YCbCr video color. The 16-bit YCbCr output is then output to monitor using an HDMI cable. In this project, we did the color conversion using two different approach: 
+                                    <ol>
+                                        <li>software color conversion</li>
+                                        <li>hardware color pipeline</li>
+                                    </ol>
+                                    As we can see from the video, software color conversion has a lower frame rate as compared to hardware pipeline that has decent frame rate.
+                                    Lastly, we are required to write C code to implement features in digital camera such as taking pictures and switching to playback mode.
+                                    <br /><br />
+                                    <font color="99ffff" size="4"><strong>Skills &amp; Knowledge Gained:</strong></font>
+                                    <ul>
+                                        <li>Image conversion modeling using Matlab.</li>
+                                        <li>Understanding Color Conversion: Grayscale, Bayer, RGB format, YCbCr format.</li>
+                                        <li>The pros and cons of software vs hardware pipeline implementation.</li>
+                                    </ul>
+                                    <font color="99ffff" size="4"><strong>Resources:</strong></font>
+                                    <ul>
+                                        <li>Vivado 2018.3</li>
+                                        <li>Eclipse SDK (Software Development Kit)</li>
+                                        <li>​Zedboard: Zynq-7000</li>
+                                        <li>Matlab</li>
+                                        <li>Vita-2000 Camera</li>
+                                    </ul>
+                                </div>
+                                <div class="col-xl-6">
+                                    <strong><font color="99ffff" size="4">System Block Diagram:</font></strong>
+                                    <br/>
+                                    <img src="/Images/camera_block.png" style="width: 100%;" alt="">
+                                    <br><br>
+                                    <strong><font color="99ffff" size="4">MATLAB Prototype of Bayer to RGB to YCbCr color conversion:</font></strong>
+                                    <br/>
+                                    <div class="card border-dark">
+                                        <div class="card-header bg-dark">
+                                            <strong>
+                                                bayer2ycbcr.m
+                                            </strong>
+                                        </div>
+                                        <div class="card-body p-0">
+                                            <div id="camera_editor" class="editor"></div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        
-            <div class="sub-window" id="project2">
-                <hr class="style-one">
-                <a class="goToTop"><p class="h3"><i style="color:#4f4e4b" class="fas fa-microchip"></i>&ensp;Sentry Launcher w/ Embedded Linux</p></a>
-                <div class="content-template">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/2LnLFvQzERo" allowfullscreen></iframe>
-                    </div>
-                    <div class="m-3">
-                        <strong><font color="99ffff" size="4">Introduction:</font></strong>
-                        <br/>
-                        In this project, we integrated Embedded Linux on a Xilinx Zedboard FPGA with on board ARM processor core. With that,
-                        we uses the hardware pipeline from the Digital Camera project and by also using DMA, we access the video from the Linux Kernel
-                        and wrote another application for target finding as well as drivers and application to drive the USB missile launcher to shoot at the target.
-                        <br /><br />
-                        <font color="99ffff" size="4"><strong>Skills &amp; Knowledge Gained:</strong></font>
-                        <ul>
-                            <li>Writing USB Driver for Missile Launcher from USB Skeleton Code</li>
-                            <li>Setting up and building Embedded Linux to run on an FPGA board</li>
-                            <li>Writing sentry launcher application utilizing USB missile launcher and camera data through DMA</li>
-                        </ul>
-                        <font color="99ffff" size="4"><strong>Resources:</strong></font>
-                        <ul>
-                            <li>Vivado 2018.3</li>
-                            <li>Eclipse SDK (Software Development Kit)</li>
-                            <li>​Zedboard: Zynq-7000</li>
-                            <li>USB Missile Launcher</li>
-                            <li>Vita-2000 Camera</li>
-                        </ul>
-                        
-                        <strong><font color="99ffff" size="4">USB Missile Launcher Driver for Linux:</font></strong>
-                        <br/>
-                        <div class="card border-dark">
-                            <div class="card-header bg-dark">
-                                <strong>
-                                    launcher_driver.c
-                                </strong>
-                            </div>
-                            <div class="card-body p-0">
-                                <div id="sentry_editor" class="editor"></div>
+                <div class="col-12">
+                    <div class="sub-window" id="project4">
+                        <hr class="style-one">
+                        <a class="goToTop"><p class="h3"><i style="color:#4f4e4b" class="fas fa-microchip"></i>&ensp;MIPS Microprocessor</p></a>
+                        <div class="content-template">
+                            <div class="row mx-0">
+                                <div class="col-xl-6">
+                                    <div class="m-3">
+                                        In this project, I built a MIPS microprocessor using VHDL code. There are two different versions of MIPS microprocessor implemented: (1)Single Clock Single Instruction (2)Multiple Clock Single Instruction (Pipelined) MIPS Microprocessor. I will be focusing on showing the pipeline MIPS Microprocessor here as it is more related to real life implementation.
+                                    </div>
+                                    <strong><font color="99ffff" size="4">System Block Diagram:</font></strong>
+                                    <br>
+                                    <img src="/Images/mips_processor.jpg" style="width: 100%;" alt="">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-4">
+                                            <div>
+                                                <div style="margin: 10px 0 0 -10px">
+                                                    <a title="Open file: project-b-instruction__v1.0_.pdf" target="_blank"  href="/docs/project-b-instruction__v1.0_.pdf">
+                                                        <img src="Images/pdficon.png" width="36" height="36" style="float: left; position: relative; left: 0px; top: 0px; margin: 0 15px 15px 0; border: 0;" />
+                                                    </a>
+                                                    <div style="float: left; text-align: left; position: relative;">
+                                                        <table style="font-size: 12px; font-family: tahoma; line-height: .9;">
+                                                            <tr>
+                                                                <td colspan="2"><b>Project Description File</b></td>
+                                                            </tr>
+                                                        </table>
+                                                        <a title="Open file: project-b-instruction__v1.0_.pdf" href="/docs/project-b-instruction__v1.0_.pdf" target="_blank"  style="font-weight: bold;">
+                                                            Open File
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-4">
+                                            <div>
+                                                <div style="margin: 10px 0 0 -10px">
+                                                    <a title="Open file: project-b-report__v1.0_.pdf" target="_blank" href="/docs/project-b-report__v1.0_.pdf">
+                                                        <img src="Images/pdficon.png" width="36" height="36" style="float: left; position: relative; left: 0px; top: 0px; margin: 0 15px 15px 0; border: 0;" />
+                                                    </a>
+                                                    <div style="float: left; text-align: left; position: relative;">
+                                                        <table style="font-size: 12px; font-family: tahoma; line-height: .9;">
+                                                            <tr>
+                                                                <td colspan="2"><b>Project Write-up</b></td>
+                                                            </tr>
+                                                        </table>
+                                                        <a title="Open file: project-b-report__v1.0_.pdf" target="_blank" href="/docs/project-b-report__v1.0_.pdf" style="font-weight: bold;">
+                                                            Open File
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <strong><font color="99ffff" size="4">Introduction:</font></strong>
+                                    <br/>
+                                    In this project, we are implementing a 5-stage pipelined MIPS processor. The architecture shall support at least 6 MIPS standard instructions: ADD, ADDI, LW, SW, BEQ, J. Many of the components of processor are provided but primarily focuses would be understanding and connecting the whole pipeline processor using components given as well as building our own hazard detection, forwarding unit, branch comparator and setting up the main control.
+                                    <br />
+                                    <strong>For detailed software simulation results, please refer project write-up document above.</strong>
+                                    <br /><br />
+                                    <font color="99ffff" size="4"><strong>Skills &amp; Knowledge Gained:</strong></font>
+                                    <ul>
+                                        <li>Building a MIPS Pipelined and non-pipelined Microprocessor using ALU, Register, and Memory VHDL Files provided.</li>
+                                    </ul>
+                                    <font color="99ffff" size="4"><strong>Resources:</strong></font>
+                                    <ul>
+                                        <li>ModelSim</li>
+                                        <li>Computer Organization And Design 5th Edition Textbook</li>
+                                        <li>Quartus Prime (Optional)</li>
+                                        <li>Pipeline Registers (if_id.vhd, id_ex.vhd, ex_mem.vhd, mem_wb.vhd)</li>
+                                        <li>VHDL Sources (adder_32.vhd, ALU.vhd, and_2.vhd, branch_comparator.vhd, dmem.vhd, forwarding_unit.vhd, hazard_detection_unit.vhd, imem.vhd, main_control.vhd, mipsprocessor_pipe.vhd, mux4to1_32bit.vhd, mux21_1bit.vhd, mux21_5bit.vhd, mux21_32bit.vhd, pc_reg.vhd, register_file.vhd, sign_externder_16_32.vhd, sll_2.vhd)</li>
+                                    </ul>
+                                </div>
+                                <div class="col-xl-6">
+                                    <strong><font color="99ffff" size="4">MIPS 32-bit Pipelined Microprocessor:</font></strong>
+                                    <br/>
+                                    <div class="card border-dark">
+                                        <div class="card-header bg-dark">
+                                            <strong>
+                                                mipsprocessor_pipe.vhd
+                                            </strong>
+                                        </div>
+                                        <div class="card-body p-0">
+                                            <div id="mips_editor" class="editor"></div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </div>  
                 </div>
-            </div>
+                <div class="col-12">
+                    <div class="sub-window" id="project5">
+                        <hr class="style-one">
+                        <a class="goToTop"><p class="h3"><i style="color:#4f4e4b" class="fas fa-microchip"></i>&ensp;Mars Rover Prototype</p></a>
+                        <div class="content-template">
+                            <div class="row mx-0">
+                                <div class="col-xl-6">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/UYD185S7ohY" allowfullscreen></iframe>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 col-lg-4">
+                                            <div>
+                                                <div style="margin: 10px 0 0 -10px">
+                                                    <a title="Open file: robot_car.pdf" target="_blank"  href="/docs/robot_car.pdf">
+                                                        <img src="Images/pdficon.png" width="36" height="36" style="float: left; position: relative; left: 0px; top: 0px; margin: 0 15px 15px 0; border: 0;" />
+                                                    </a>
+                                                    <div style="float: left; text-align: left; position: relative;">
+                                                        <table style="font-size: 12px; font-family: tahoma; line-height: .9;">
+                                                            <tr>
+                                                                <td colspan="2"><b>Project Presentation</b></td>
+                                                            </tr>
+                                                        </table>
+                                                        <a title="Open file: robot_car.pdf" href="/docs/robot_car.pdf" target="_blank"  style="font-weight: bold;">
+                                                            Open File
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-4">
+                                            <div>
+                                                <div style="margin: 10px 0 0 -10px">
+                                                    <a title="Open file: final_project_report.pdf" target="_blank" href="/docs/final_project_report.pdf">
+                                                        <img src="Images/pdficon.png" width="36" height="36" style="float: left; position: relative; left: 0px; top: 0px; margin: 0 15px 15px 0; border: 0;" />
+                                                    </a>
+                                                    <div style="float: left; text-align: left; position: relative;">
+                                                        <table style="font-size: 12px; font-family: tahoma; line-height: .9;">
+                                                            <tr>
+                                                                <td colspan="2"><b>Project Report</b></td>
+                                                            </tr>
+                                                        </table>
+                                                        <a title="Open file: final_project_report.pdf" target="_blank" href="/docs/final_project_report.pdf" style="font-weight: bold;">
+                                                            Open File
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <strong><font color="99ffff" size="4">Main source code for Mars Rover Prototype (Programming System side):</font></strong>
+                                    <br/>
+                                    <div class="card border-dark">
+                                        <div class="card-header bg-dark">
+                                            <strong>
+                                                main.c
+                                            </strong>
+                                        </div>
+                                        <div class="card-body p-0">
+                                            <div id="mars_rover_editor" class="editor"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-            <div class="sub-window" id="project3">
-                <hr class="style-one">
-                <a class="goToTop"><p class="h3"><i style="color:#4f4e4b" class="fas fa-microchip"></i>&ensp;Digital Camera</p></a>
-                <div class="content-template">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/HFHIIv6eh1g" allowfullscreen></iframe>
-                    </div>
-                    <div class="m-3">
-                        <div class="row">
-                            <div class="col-12 col-lg-4">
-                                <div>
-                                    <div style="margin: 10px 0 0 -10px">
-                                        <a title="Open file: mp-2.pdf" target="_blank"  href="/docs/mp-2.pdf">
-                                            <img src="Images/pdficon.png" width="36" height="36" style="float: left; position: relative; left: 0px; top: 0px; margin: 0 15px 15px 0; border: 0;" />
-                                        </a>
-                                        <div style="float: left; text-align: left; position: relative;">
-                                            <table style="font-size: 12px; font-family: tahoma; line-height: .9;">
-                                                <tr>
-                                                    <td colspan="2"><b>Project Description File</b></td>
-                                                </tr>
-                                            </table>
-                                            <a title="Open file: mp-2.pdf" href="/docs/mp-2.pdf" target="_blank"  style="font-weight: bold;">
-                                                Open File
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-lg-4">
-                                <div>
-                                    <div style="margin: 10px 0 0 -10px">
-                                        <a title="Open file: mp-2_write-up.pdf" target="_blank" href="/docs/mp-2_write-up.pdf">
-                                            <img src="Images/pdficon.png" width="36" height="36" style="float: left; position: relative; left: 0px; top: 0px; margin: 0 15px 15px 0; border: 0;" />
-                                        </a>
-                                        <div style="float: left; text-align: left; position: relative;">
-                                            <table style="font-size: 12px; font-family: tahoma; line-height: .9;">
-                                                <tr>
-                                                    <td colspan="2"><b>Project Write-up</b></td>
-                                                </tr>
-                                            </table>
-                                            <a title="Open file: mp-2_write-up.pdf" target="_blank" href="/docs/mp-2_write-up.pdf" style="font-weight: bold;">
-                                                Open File
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
-                        <strong><font color="99ffff" size="4">Introduction:</font></strong>
-                        <br/>
-                        This is the project from Embedded System II class that we are designing both hardware and software platform. For the purpose of this particular project, we are required to convert a Bayer image input from VITA-2000 camera into a full 24-bit RGB full color and then to 16-bit YCbCr video color. The 16-bit YCbCr output is then output to monitor using an HDMI cable. In this project, we did the color conversion using two different approach: 
-                        <ol>
-                            <li>software color conversion</li>
-                            <li>hardware color pipeline</li>
-                        </ol>
-                        As we can see from the video, software color conversion has a lower frame rate as compared to hardware pipeline that has decent frame rate.
-                        Lastly, we are required to write C code to implement features in digital camera such as taking pictures and switching to playback mode.
-                        <br /><br />
-                        <font color="99ffff" size="4"><strong>Skills &amp; Knowledge Gained:</strong></font>
-                        <ul>
-                            <li>Image conversion modeling using Matlab.</li>
-                            <li>Understanding Color Conversion: Grayscale, Bayer, RGB format, YCbCr format.</li>
-                            <li>The pros and cons of software vs hardware pipeline implementation.</li>
-                        </ul>
-                        <font color="99ffff" size="4"><strong>Resources:</strong></font>
-                        <ul>
-                            <li>Vivado 2018.3</li>
-                            <li>Eclipse SDK (Software Development Kit)</li>
-                            <li>​Zedboard: Zynq-7000</li>
-                            <li>Matlab</li>
-                            <li>Vita-2000 Camera</li>
-                        </ul>
-                        
-                        <strong><font color="99ffff" size="4">System Block Diagram:</font></strong>
-                        <br/>
-                        <img src="/Images/camera_block.png" style="width: 100%;" alt="">
-                        <br><br>
-                        <strong><font color="99ffff" size="4">MATLAB Prototype of Bayer to RGB to YCbCr color conversion:</font></strong>
-                        <br/>
-                        <div class="card border-dark">
-                            <div class="card-header bg-dark">
-                                <strong>
-                                    bayer2ycbcr.m
-                                </strong>
-                            </div>
-                            <div class="card-body p-0">
-                                <div id="camera_editor" class="editor"></div>
-                            </div>
-                        </div>
-                    </div>
+                    </div>  
                 </div>
             </div>
-        
-            <div class="sub-window" id="project4">
-                <hr class="style-one">
-                <a class="goToTop"><p class="h3"><i style="color:#4f4e4b" class="fas fa-microchip"></i>&ensp;MIPS Microprocessor</p></a>
-                <div class="content-template">
-                    <div class="m-3">
-                        In this project, I built a MIPS microprocessor using VHDL code. There are two different versions of MIPS microprocessor implemented: (1)Single Clock Single Instruction (2)Multiple Clock Single Instruction (Pipelined) MIPS Microprocessor. I will be focusing on showing the pipeline MIPS Microprocessor here as it is more related to real life implementation.
-                    </div>
-                    <div class="card border-dark">
-                        <div class="card-header bg-dark">
-                            <strong>
-                                mipsprocessor_pipe.vhd
-                            </strong>
-                        </div>
-                        <div class="card-body p-0">
-                            <div id="mips_editor" class="editor"></div>
-                        </div>
-                    </div>
-                    <div class="m-3">
-                        <div class="row">
-                            <div class="col-12 col-lg-4">
-                                <div>
-                                    <div style="margin: 10px 0 0 -10px">
-                                        <a title="Open file: project-b-instruction__v1.0_.pdf" target="_blank"  href="/docs/project-b-instruction__v1.0_.pdf">
-                                            <img src="Images/pdficon.png" width="36" height="36" style="float: left; position: relative; left: 0px; top: 0px; margin: 0 15px 15px 0; border: 0;" />
-                                        </a>
-                                        <div style="float: left; text-align: left; position: relative;">
-                                            <table style="font-size: 12px; font-family: tahoma; line-height: .9;">
-                                                <tr>
-                                                    <td colspan="2"><b>Project Description File</b></td>
-                                                </tr>
-                                            </table>
-                                            <a title="Open file: project-b-instruction__v1.0_.pdf" href="/docs/project-b-instruction__v1.0_.pdf" target="_blank"  style="font-weight: bold;">
-                                                Open File
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-lg-4">
-                                <div>
-                                    <div style="margin: 10px 0 0 -10px">
-                                        <a title="Open file: project-b-report__v1.0_.pdf" target="_blank" href="/docs/project-b-report__v1.0_.pdf">
-                                            <img src="Images/pdficon.png" width="36" height="36" style="float: left; position: relative; left: 0px; top: 0px; margin: 0 15px 15px 0; border: 0;" />
-                                        </a>
-                                        <div style="float: left; text-align: left; position: relative;">
-                                            <table style="font-size: 12px; font-family: tahoma; line-height: .9;">
-                                                <tr>
-                                                    <td colspan="2"><b>Project Write-up</b></td>
-                                                </tr>
-                                            </table>
-                                            <a title="Open file: project-b-report__v1.0_.pdf" target="_blank" href="/docs/project-b-report__v1.0_.pdf" style="font-weight: bold;">
-                                                Open File
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <strong><font color="99ffff" size="4">Introduction:</font></strong>
-                        <br/>
-                        In this project, we are implementing a 5-stage pipelined MIPS processor. The architecture shall support at least 6 MIPS standard instructions: ADD, ADDI, LW, SW, BEQ, J. Many of the components of processor are provided but primarily focuses would be understanding and connecting the whole pipeline processor using components given as well as building our own hazard detection, forwarding unit, branch comparator and setting up the main control.
-                        <br />
-                        <strong>For detailed software simulation results, please refer project write-up document above.</strong>
-                        <br /><br />
-                        <font color="99ffff" size="4"><strong>Skills &amp; Knowledge Gained:</strong></font>
-                        <ul>
-                            <li>Building a MIPS Pipelined and non-pipelined Microprocessor using ALU, Register, and Memory VHDL Files provided.</li>
-                        </ul>
-                        <font color="99ffff" size="4"><strong>Resources:</strong></font>
-                        <ul>
-                            <li>ModelSim</li>
-                            <li>Computer Organization And Design 5th Edition Textbook</li>
-                            <li>Quartus Prime (Optional)</li>
-                            <li>Pipeline Registers (if_id.vhd, id_ex.vhd, ex_mem.vhd, mem_wb.vhd)</li>
-                            <li>VHDL Sources (adder_32.vhd, ALU.vhd, and_2.vhd, branch_comparator.vhd, dmem.vhd, forwarding_unit.vhd, hazard_detection_unit.vhd, imem.vhd, main_control.vhd, mipsprocessor_pipe.vhd, mux4to1_32bit.vhd, mux21_1bit.vhd, mux21_5bit.vhd, mux21_32bit.vhd, pc_reg.vhd, register_file.vhd, sign_externder_16_32.vhd, sll_2.vhd)</li>
-                        </ul>
-                        <strong><font color="99ffff" size="4">System Block Diagram:</font></strong>
-                        <br>
-                        <img src="/Images/mips_processor.jpg" style="width: 100%;" alt="">
-                    </div>
-                </div>
-            </div>  
-            
-            <div class="sub-window" id="project5">
-                <hr class="style-one">
-                <a class="goToTop"><p class="h3"><i style="color:#4f4e4b" class="fas fa-microchip"></i>&ensp;Mars Rover Prototype</p></a>
-                <div class="content-template">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/UYD185S7ohY" allowfullscreen></iframe>
-                    </div>
-                    <div class="m-3">
-                        <div class="row">
-                            <div class="col-12 col-lg-4">
-                                <div>
-                                    <div style="margin: 10px 0 0 -10px">
-                                        <a title="Open file: robot_car.pdf" target="_blank"  href="/docs/robot_car.pdf">
-                                            <img src="Images/pdficon.png" width="36" height="36" style="float: left; position: relative; left: 0px; top: 0px; margin: 0 15px 15px 0; border: 0;" />
-                                        </a>
-                                        <div style="float: left; text-align: left; position: relative;">
-                                            <table style="font-size: 12px; font-family: tahoma; line-height: .9;">
-                                                <tr>
-                                                    <td colspan="2"><b>Project Presentation</b></td>
-                                                </tr>
-                                            </table>
-                                            <a title="Open file: robot_car.pdf" href="/docs/robot_car.pdf" target="_blank"  style="font-weight: bold;">
-                                                Open File
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-lg-4">
-                                <div>
-                                    <div style="margin: 10px 0 0 -10px">
-                                        <a title="Open file: final_project_report.pdf" target="_blank" href="/docs/final_project_report.pdf">
-                                            <img src="Images/pdficon.png" width="36" height="36" style="float: left; position: relative; left: 0px; top: 0px; margin: 0 15px 15px 0; border: 0;" />
-                                        </a>
-                                        <div style="float: left; text-align: left; position: relative;">
-                                            <table style="font-size: 12px; font-family: tahoma; line-height: .9;">
-                                                <tr>
-                                                    <td colspan="2"><b>Project Report</b></td>
-                                                </tr>
-                                            </table>
-                                            <a title="Open file: final_project_report.pdf" target="_blank" href="/docs/final_project_report.pdf" style="font-weight: bold;">
-                                                Open File
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <br>
-                        <strong><font color="99ffff" size="4">Main source code for Mars Rover Prototype (Programming System side):</font></strong>
-                        <br/>
-                        <div class="card border-dark">
-                            <div class="card-header bg-dark">
-                                <strong>
-                                    main.c
-                                </strong>
-                            </div>
-                            <div class="card-body p-0">
-                                <div id="mars_rover_editor" class="editor"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>  
         </div>
     </section>
     
